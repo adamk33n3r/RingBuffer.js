@@ -3,8 +3,8 @@ TypeScript implementation of a ring buffer
 
 ## Installation
 ```sh
-yarn add ringbuffer.js
-npm install ringbuffer.js --save
+yarn add @adamk33n3r/ringbuffer.js
+npm install @adamk33n3r/ringbuffer.js --save
 ```
 
 ## Usage
@@ -12,7 +12,7 @@ npm install ringbuffer.js --save
 ### Javascript
 
 ```javascript
-var RingBuffer = require('ringbuffer.js').RingBuffer;
+var RingBuffer = require('@adamk33n3r/ringbuffer.js').RingBuffer;
 
 var ringBuffer = new RingBuffer(5);
 ringBuffer.push(1);
@@ -28,7 +28,7 @@ ringBuffer.all(); // [ 2, 3, 4, 5, 6 ]
 ### Typescript
 
 ```typescript
-import { RingBuffer } from 'ringbuffer.js';
+import { RingBuffer } from '@adamk33n3r/ringbuffer.js';
 
 const ringBuffer = new RingBuffer(5);
 ringBuffer.push(1);
