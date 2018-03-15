@@ -1,7 +1,7 @@
 # RingBuffer.js
 TypeScript implementation of a ring buffer
 
-## Instalation
+## Installation
 ```sh
 yarn add ringbuffer.js
 npm install ringbuffer.js --save
