@@ -1,6 +1,6 @@
 {
   "name": "@adamk33n3r/ringbuffer.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "TypeScript implementation of a ring buffer",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
