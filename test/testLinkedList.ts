@@ -30,4 +30,28 @@ describe('LinkedList', () => {
     });
     expect(i).to.equal(3);
   });
+
+  it('should return empty array when calling .all() and empty', () => {
+    const linkedList = new LinkedList<number>();
+    expect(linkedList.all().length).to.equal(0);
+  });
+
+  it('should pop undefined when length of 0', () => {
+    const linkedList = new LinkedList<number>();
+    expect(linkedList.pop()).to.equal(undefined);
+  });
+
+  it('should pop item when length of 1', () => {
+    const linkedList = new LinkedList<number>();
+    linkedList.push(1);
+    expect(linkedList.pop()).to.equal(1);
+  });
+
+  it('should remove head when popping last item', () => {
+    const linkedList = new LinkedList<number>();
+    linkedList.push(1);
+    linkedList.pop();
+    console.log(linkedList);
+    expect(linkedList.head).to.equal(null);
+  });
 });

@@ -21,14 +21,26 @@ class LinkedList {
         }
     }
     pop() {
+        if (this.tail == null) {
+            return undefined;
+        }
         const data = this.tail.data;
         this.tail = this.tail.prev;
-        // Remove reference to popped node
-        this.tail.next = null;
+        // If tail is null then we popped head
+        if (this.tail == null) {
+            this.head = null;
+        }
+        else {
+            // Remove reference to popped node
+            this.tail.next = null;
+        }
         return data;
     }
     each(func) {
         let cur = this.head;
+        if (cur == null) {
+            return;
+        }
         do {
             func(cur.data);
         } while ((cur = cur.next) != null);
